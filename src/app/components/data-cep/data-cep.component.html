@@ -1,0 +1,23 @@
+<!-- Campo de pesquisa -->
+<app-search (emmitSearch)="getCepSend($event)"></app-search>
+
+<!-- Apresentação dos dados -->
+<main>
+  <section class="container">
+    <h1>Informações</h1>
+
+    <nav *ngIf="!not_found">
+      <ul>
+        <li>Cep: <span>{{ information ? information.cep : 'Não informado' }}</span></li>
+        <li>Cidade: <span>{{ information ? information.localidade : '-' }}</span></li>
+        <li>Logradouro: <span>{{ information ? information.logradouro : '-' }}</span></li>
+        <li>Complemento: <span>{{ information ? information.complemento : '-' }}</span></li>
+        <li>Bairro: <span>{{ information ? information.bairro : '-' }}</span></li>
+        <li>Estado: <span>{{ information ? information.uf : '-' }}</span></li>
+        <li>DDD: <span>{{ information ? information.ddd : '-' }}</span></li>
+      </ul>
+    </nav>
+
+    <p class="not__found" *ngIf="not_found">Endereço não encontrado!</p>
+  </section>
+</main>

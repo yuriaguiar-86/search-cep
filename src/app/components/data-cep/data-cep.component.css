@@ -1,0 +1,38 @@
+main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  color: var(--green);
+}
+
+.container {
+  margin: 0 30px;
+  width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+}
+
+nav {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-top: 5px;
+  color: var(--grey);
+}
+
+li span {
+  color: var(--light-grey);
+}
+
+.not__found {
+  font-size: 1.1em;
+  margin-top: 20px;
+  color: var(--grey);
+}

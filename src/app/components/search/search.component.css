@@ -1,0 +1,38 @@
+header {
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.search__cep {
+  width: 500px;
+  margin: 0 30px;
+  padding: 5px 15px;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  background: var(--grey);
+}
+
+input, button {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+img {
+  width: 15px;
+}
